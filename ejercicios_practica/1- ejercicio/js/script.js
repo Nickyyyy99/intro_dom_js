@@ -14,3 +14,7 @@ Leer el título del "header" del post e imprimirlo en consola.
 Cambiar título utilizando javascript por otro cualquiera.
 
 */
+console.log(document)
+let titulo = document.getElementById("title")
+console.log(title)
+titulo.textContent= "Botones"
