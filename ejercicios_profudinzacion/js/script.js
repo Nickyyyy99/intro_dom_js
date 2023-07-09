@@ -8,3 +8,106 @@ const descripcion_normal = "Los Pokémon de tipo normal abarcan la mayor cantida
 const descripcion_fuego = "Los Pokémon de tipo tipo fuego basan sus ataques, principalmente, en el control de este elemento; y la mayoría pueden quemar al Pokémon oponente, mientras que ellos no sufren quemaduras. Son apasionados y, algunos, de mal carácter (como el Charizard de Ash); viven en cuevas o zonas rocosas y muy áridas; y, más probable, aun cerca de volcanes activos. Sin embargo, los únicos Pokémon que aparentemente suelen andar por lugares verdes como las praderas, son Ponyta y Rapidash, pudiendo ser que estos lugares les permiten galopar sin obstáculos. También, algunos son más dóciles, como Growlithe, Vulpix y sus respectivas evoluciones."
 
 /* Comienza a escribir su código aquí */
+
+const btnPlanta = document.querySelector("#btnPlanta", ".planta")
+
+
+btnPlanta.addEventListener("click", function () {
+let titulo = document.querySelector(".header")
+    titulo.textContent="Tipo Planta"
+
+let p = document.querySelector("#descripcion")
+    p.textContent=(descripcion_planta)
+
+let imagen = document.querySelector("img", ".icon-type")
+    imagen.setAttribute("src", "./images/grass_type.png")
+
+let classe = document.querySelector("article", ".planta")
+    classe.classList.add("planta")
+
+   console.log(btnPlanta)
+})
+
+
+console.log()
+
+const aqua = document.querySelector("#btnAgua", ".agua")
+
+aqua.addEventListener("click", function () {
+ let titulo = document.querySelector("div", ".header")
+    titulo.textContent="Tipo Agua"
+
+ let fondo = document.querySelector("article" , ".planta")
+    fondo.classList.remove("planta")
+    fondo.classList.add("agua")
+
+ let desc= document.querySelector("p", "#descripcion")
+    desc.textContent=(descripcion_agua)
+
+ let imagen = document.querySelector("img", ".icon-type")
+    imagen.setAttribute("src", "./images/water_type.png")
+})
+
+let electro = document.querySelector("#btnElectricidad", ".electricidad")
+
+electro.addEventListener("click", function () {
+ let titulo = document.querySelector("div", ".header")
+   titulo.textContent="Tipo Electricidad"
+
+ let fondo1= document.querySelector("article" , ".planta")
+    fondo1.classList.remove("planta")
+   fondo1.classList.add("electricidad")
+
+ let descrip = document.querySelector("p", "#descripcion")
+    descrip.textContent=(descripcion_electrico)
+
+let imagen = document.querySelector("img", ".icon-type")
+    imagen.setAttribute("src", "./images/electric_type.png")
+})
+
+const normal = document.querySelector("#btnNormal", ".normal" )
+
+normal.addEventListener("click" , function (){
+ let titulo = document.querySelector("div", ".header")
+      titulo.textContent="Tipo Normal"
+
+let descrip = document.querySelector("p" , "#descripcion")
+  descrip.textContent=(descripcion_normal)
+
+let imagen = document.querySelector("img", ".icon-type")
+   imagen.setAttribute("src" ,"./images/normal_type.png")
+
+ let fondo2 = document.querySelector("article",".planta")
+    fondo2.classList.remove("planta")
+    fondo2.classList.add("normal")    
+ })
+
+const fuego = document.querySelector("#btnFuego", ".fuego")
+
+fuego.addEventListener("click", function(){
+let titulo = document.querySelector("div", ".header")
+    titulo.textContent="Tipo Fuego"
+
+let fondo3 = document.querySelector("article" , ".planta")
+    fondo3.classList.remove("planta")
+    fondo3.classList.add("fuego")
+
+let descrip = document.querySelector("p", "#descripcion")
+    descrip.textContent=(descripcion_fuego)
+
+let imagen = document.querySelector("img, .icon-type")
+    imagen.setAttribute("src", "./images/fire_type.png")
+})
+
+let plant = document.querySelector("article", ".planta")
+
+plant.addEventListener("click", function (){
+    let plantaa = document.querySelector("article", ".planta")
+})
+
+// let title = document.querySelector(".header")
+
+
+
+
+
